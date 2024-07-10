@@ -1,0 +1,134 @@
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+    min-height: 100vh;
+    padding: 0px 0px 20px 0px;
+}
+
+.card {
+    height: 180px;
+    border: 1px solid #e3e3e6;
+    border-radius: 15px;
+    background-color: #e3e3e6;
+    overflow: hidden;
+    padding: 10px 5px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    background-color: #c5c5cb;
+}
+
+.card_skleton {
+    height: 180px;
+    border: 1px solid #e3e3e6;
+    border-radius: 15px;
+    background-color: #e3e3e6;
+    overflow: hidden;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #343437;
+}
+
+.card_image_layout {
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 127px;
+    margin: auto;
+
+    position: relative;
+}
+
+.card_image {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card_image_background {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    opacity: 0.9;
+
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.types_layout {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.type {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #efeff0;
+    line-height: 1;
+
+    border: none;
+    padding: 3px 9px;
+    border-radius: 20px;
+    background-color: #c5c5cb;
+}
+
+@media only screen and (max-width: 768px) {
+    .card_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .card_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .card_container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+    }
+}
+
+@keyframes skeleton-loading {
+    0% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.7;
+    }
+}

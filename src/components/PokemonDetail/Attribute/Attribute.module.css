@@ -1,0 +1,152 @@
+.details_background {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px 30px;
+    margin: 0px;
+
+    min-height: 200px;
+}
+
+.pokemon_name {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3d3d3d;
+}
+
+.card_image_layout {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.card_image {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    border: none;
+
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card_image_background {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.grid_info {
+    width: fit-content;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 100px 200px;
+    gap: 2px;
+}
+
+.label {
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+    color: #3d3d3d;
+    padding: 4px;
+}
+
+.content {
+    font-weight: 500;
+    color: #464646;
+    padding: 4px;
+    text-align: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.content_abilities {
+    text-transform: capitalize;
+    color: #ffffff;
+    width: auto;
+    padding: 3px 6px;
+    opacity: 0.7;
+}
+
+.btn_back {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    background-color: #ffcc01;
+    text-decoration: none;
+    margin: 20px auto 0px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .card_image_layout {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .card_image_layout {
+        width: 100%;
+        height: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+
+    .card_image_background {
+        width: 80%;
+        height: 80%;
+        max-width: 300px;
+        border-radius: 50%;
+
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .card_image_layout {
+        width: 100%;
+        height: 100%;
+        min-height: 300px;
+        max-height: 300px;
+    }
+
+    .card_image_background {
+        width: 80%;
+        height: 80%;
+        max-width: 300px;
+        border-radius: 50%;
+
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
